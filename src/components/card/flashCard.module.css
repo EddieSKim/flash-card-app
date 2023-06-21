@@ -1,0 +1,35 @@
+.flashCard {
+    width: 500px;
+    height: 300px;
+    border-radius: 7px;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front {
+    background-color: #5e7ecf;
+}
+
+.back {
+    background-color: #765ecf;
+    transform: rotateY(180deg);
+}
